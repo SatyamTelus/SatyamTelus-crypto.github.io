@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&family=Varela+Round&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+
+   <!-- Scripts here -->
+   <script src = "https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+  
+    <title>Crypto Currency Tracker</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <center>
+    <h1>Crypto Currency Tracker</h1>
+    </center>
+    
+</head>
+<body id="boody">
+  
+    <!-- Table -->
+       <table style= "margin: 50px auto 50px auto; " class="table table-dark" id="myTable">
+        <thead >
+          <tr >
+            <!-- <th scope="col">#</th> -->
+            <th scope="col">Currency</th>
+            <th scope="col">Icon</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody >
+
+                                                <!--Predefined Table  -->
+          <!-- <tr >
+            <th scope="row">1</th>
+            <td >Bitcoin</td>
+            <td><img class="logo" src="https://i.pinimg.com/474x/6c/87/c2/6c87c20c313ed8bff1b0378780dd7dc6.jpg" alt="Bitcoin"></td>
+            <td>$ <span id="bitcoin">0</span></td>
+          </tr>
+          <tr >
+            <th scope="row">2</th>
+            <td>Litecoin</td>
+            <td><img class="logo" src="https://imageio.forbes.com/specials-images/dam/imageserve/1019684371/960x0.jpg?format=jpg&width=960" alt="Litecoin"></td>
+            <td>$ <span id="litecoin">0</span></td>
+          </tr>
+          <tr >
+            <th scope="row">3</th>
+            <td>Dogecoin</td>
+            <td><img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9duQxRa6WDtUgU0qQ2UbG3T84Dehx3sq6xWmv-4D85TPFijgNLdY3bNlFHP7YqdOVjKQ&usqp=CAU" alt="Dogecoin"></td>
+            <td>$ <span id="dogecoin">0</span></td>
+          </tr>
+          <tr > -->
+            <!-- <th scope="row">1</th>  -->
+            
+                                               <!-- Dekhlo agar daalna hai to -->
+            <!-- <td id="userInp">userInput</td>
+            <td><img id = "img4" class="logo" src="https://thumbs.dreamstime.com/z/one-rupee-coin-india-big-old-white-background-type-coins-were-circulation-year-to-60148905.jpg" alt="Dogecoin"></td>
+            <td>$ <span id="userCoin">0</span></td> -->
+          </tr>
+          
+
+        </tbody>
+      </table> 
+      <!-- Table Ended Here -->
+      
+      <div>
+        <h3>Crypto Data Available for: </h3>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-success" onclick="cryptoTable()" >BitCoin</li>
+            <li class="list-group-item list-group-item-success" onclick="cryptoTable()" >DogeCoin</li>
+            <li class="list-group-item list-group-item-success" onclick="cryptoTable()" >Ethereum</li>
+            <li class="list-group-item list-group-item-success" onclick="cryptoTable()" >LiteCoin</li>
+            <li class="list-group-item list-group-item-success" onclick="cryptoTable()" > Matic-Network</li>
+            <li class="list-group-item list-group-item-success" onclick="cryptoTable()" >ShitCoin</li>
+        </ul>
+      </div>
+
+    
+       <form name="myForm"  method="get">
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Please enter a valid crypto currency:</label>
+          <textarea NAME="inputbox" VALUE="" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <center><button type="button" class="btn btn-primary"  onclick="greetings(this.form)">Enter Currency</button></center>
+     
+      </form> 
+
+     
+    <script src="myscript.js"></script>  
+
+
+
+
+</body>
+</html>
